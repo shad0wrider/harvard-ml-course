@@ -231,7 +231,7 @@ jobs:
           done
 
       - name: ⬇️ Checkout repository (for scripts)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: dev
           path: ./repo-scripts

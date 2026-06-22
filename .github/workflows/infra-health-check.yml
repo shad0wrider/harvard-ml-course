@@ -129,7 +129,7 @@ jobs:
         if: |
           (matrix.platform == 'linux' && inputs.test_linux != false) ||
           (matrix.platform == 'windows' && inputs.test_windows != false)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 

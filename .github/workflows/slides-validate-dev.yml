@@ -67,7 +67,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔍 Check SVG XML validity
         working-directory: slides
@@ -99,7 +99,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔧 Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -128,7 +128,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🔍 Check .tex files for common errors
         working-directory: slides

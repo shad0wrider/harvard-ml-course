@@ -76,7 +76,7 @@ jobs:
       tag: ${{ steps.extract.outputs.tag }}
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0   # need full history to verify tag reachability from dev
 
@@ -164,7 +164,7 @@ jobs:
         python-version: ['3.10', '3.11', '3.12', '3.13']
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🐍 Setup Python ${{ matrix.python-version }}
         uses: actions/setup-python@v6
@@ -191,7 +191,7 @@ jobs:
       sdist_name: ${{ steps.names.outputs.sdist }}
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v6
@@ -331,7 +331,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout (full history for tag resolution)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0       # needed for `git describe --tags` to find PREV_TAG
 

@@ -73,7 +73,7 @@ jobs:
       # checkout in STEP 4 happens after parse passes (avoids paying for it
       # on malformed comments).
       - name: Checkout projects config (sparse)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ env.TARGET_BRANCH }}
           sparse-checkout: |
@@ -422,7 +422,7 @@ jobs:
       # point we've passed parse and need every project's .all-contributorsrc,
       # READMEs, and the generator scripts to update them.
       #
-      # actions/checkout@v6 does NOT auto-clear sparse-checkout state from a
+      # actions/checkout@v7 does NOT auto-clear sparse-checkout state from a
       # prior invocation in the same job. The .git/info/sparse-checkout file
       # and core.sparseCheckout config persist; passing sparse-checkout: ''
       # is interpreted as "empty include list" rather than "disable sparse",
@@ -441,7 +441,7 @@ jobs:
 
       - name: Checkout repository (full)
         if: steps.extract.outputs.should_run == 'true' && steps.parse.outputs.success == 'true'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ env.TARGET_BRANCH }}
           fetch-depth: 0

@@ -65,7 +65,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout (script + shared config)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           sparse-checkout: |
             .github/scripts/visual_smoke.py

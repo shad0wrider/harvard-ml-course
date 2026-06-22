@@ -266,7 +266,7 @@ jobs:
           echo "✅ Environment check completed"
 
       - name: 📥 Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 🧹 Free up disk space
         run: |
