@@ -74,7 +74,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout dev (for the build script)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: dev
           path: dev-src
@@ -83,7 +83,7 @@ jobs:
           sparse-checkout-cone-mode: false
 
       - name: 📥 Checkout gh-pages
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: gh-pages
           path: gh-pages

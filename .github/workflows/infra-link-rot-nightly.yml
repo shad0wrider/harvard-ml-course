@@ -163,7 +163,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       # -------------------------------------------------------------------
       # 1. Aggregate sweep outputs. We read `needs.<job>.outputs.check-status`

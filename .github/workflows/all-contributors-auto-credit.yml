@@ -67,7 +67,7 @@ jobs:
       # STEP 0: Sparse-checkout the contributors helpers
       # =====================================================================
       - name: Checkout helpers (sparse)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ env.TARGET_BRANCH }}
           sparse-checkout: |

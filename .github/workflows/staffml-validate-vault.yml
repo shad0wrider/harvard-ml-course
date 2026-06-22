@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with: { fetch-depth: 0 }   # deep clone so append-only check has base ref
 
       - name: Set up Python (PINNED for hash stability)
@@ -231,7 +231,7 @@ jobs:
       run:
         working-directory: interviews/staffml-vault-worker
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Set up Node
         uses: actions/setup-node@v6
