@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/vscode": "^1.120.0",
-    "@types/node": "^25.9.0",
+    "@types/node": "^26.1.0",
     "typescript": "^6.0.3"
   },
   "contributes": {
