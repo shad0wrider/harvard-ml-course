@@ -65,7 +65,7 @@ jobs:
           # token: ${{ secrets.CHAIN_REBUILD_PAT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
