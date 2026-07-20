@@ -143,7 +143,7 @@ jobs:
           fi
 
       - name: 🐍 Setup Python (for release manifest)
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ vars.PYTHON_VERSION || '3.12' }}
 

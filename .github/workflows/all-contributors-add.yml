@@ -448,7 +448,7 @@ jobs:
 
       - name: Setup Python
         if: steps.extract.outputs.should_run == 'true' && steps.parse.outputs.success == 'true'
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 

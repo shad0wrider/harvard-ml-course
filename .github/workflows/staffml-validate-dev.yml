@@ -92,7 +92,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: 🐍 Setup Python (for vault-cli)
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -138,7 +138,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: 🐍 Setup Python (for vault-cli)
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -227,7 +227,7 @@ jobs:
         run: npm ci
 
       - name: 🐍 Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -270,7 +270,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: 🐍 Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
