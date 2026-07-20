@@ -106,7 +106,7 @@ jobs:
           vault build --vault-dir "$VAULT_DIR" --release-id validate-dev-tsc --local-json
 
       - name: 🔧 Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
@@ -152,7 +152,7 @@ jobs:
           vault build --vault-dir "$VAULT_DIR" --release-id validate-dev-build --local-json
 
       - name: 🔧 Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
@@ -216,7 +216,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: 🔧 Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'

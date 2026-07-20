@@ -76,7 +76,7 @@ jobs:
           tinytex: true
 
       - name: 🟢 Setup Node.js (for Mermaid)
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ vars.NODE_VERSION || '20' }}
 
